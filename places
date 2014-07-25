@@ -1,0 +1,11 @@
+;;; -*- coding: utf-8 -*-
+(("/home/jef/.emacs.d/elpa/archives/gnu/archive-contents" . 14506)
+ ("/home/jef/.emacs.d/elpa/archives/marmalade/archive-contents" . 105219)
+ ("/home/jef/.emacs.d/elpa/archives/melpa/archive-contents" . 298440)
+ ("/home/jef/.emacs.d/elpa/archives/org/archive-contents" . 185)
+ ("/home/jef/.emacs.d/elpa/cider-20140725.415/cider-autoloads.el" . 3079)
+ ("/home/jef/.emacs.d/elpa/clojure-mode-20140722.610/clojure-mode-autoloads.el" . 540)
+ ("/home/jef/.emacs.d/elpa/dash-20140717.547/dash-autoloads.el" . 174)
+ ("/home/jef/.emacs.d/elpa/epl-20140620.218/epl-autoloads.el" . 171)
+ ("/home/jef/.emacs.d/elpa/pkg-info-20140610.630/pkg-info-autoloads.el" . 3975)
+ ("/home/jef/.emacs.d/init.el" . 214))
