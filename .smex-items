@@ -1,0 +1,45 @@
+
+;; ----- smex-history -----
+(
+ yank
+ kill-region
+ eval-buffer
+ package-install
+ load-library
+ elnode-server-list
+ version
+)
+
+;; ----- smex-data -----
+(
+ (package-install . 6)
+ (package-refresh-contents . 3)
+ (load-theme . 2)
+ (multi-term . 3)
+ (speedbar . 1)
+ (package-list-packages . 2)
+ (cider-jack-in . 1)
+ (slime . 1)
+ (ielm . 1)
+ (list-packages . 1)
+ (poker . 1)
+ (hanoi . 2)
+ (elnode-server-list . 8)
+ (elnode-make-webserver . 1)
+ (elnode-lists-kill-server . 1)
+ (erc . 1)
+ (clean-buffer-list . 1)
+ (ido-mode . 4)
+ (make-directory . 1)
+ (eval-buffer . 31)
+ (elnode-list-buffers . 2)
+ (list-elnode-servers . 5)
+ (indent-region . 3)
+ (html-mode . 1)
+ (web-mode . 1)
+ (electric-indent-mode . 1)
+ (load-library . 3)
+ (version . 1)
+ (kill-region . 1)
+ (yank . 1)
+)
