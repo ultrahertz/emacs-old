@@ -1,3 +1,4 @@
+;; -*- mode: emacs-lisp coding: utf-8 -*-
 
 (setq user-full-name "James Fletcher")
 (setq user-mail-address "jamesfbsd@gmail.com")
@@ -48,6 +49,7 @@
                           htmlize
                           magit
                           markdown-mode
+                          multi-term
                           nodejs-repl
                           org
                           php-mode

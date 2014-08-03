@@ -4,8 +4,8 @@
 
 
 ;;;### (autoloads (htmlize-many-files-dired htmlize-many-files htmlize-file
-;;;;;;  htmlize-region htmlize-buffer) "htmlize" "htmlize.el" (21458
-;;;;;;  47555 300657 523000))
+;;;;;;  htmlize-region htmlize-buffer) "htmlize" "htmlize.el" (21470
+;;;;;;  30542 19097 888000))
 ;;; Generated autoloads from htmlize.el
 
 (autoload 'htmlize-buffer "htmlize" "\
@@ -70,8 +70,7 @@ HTMLize dired-marked files.
 
 ;;;***
 
-;;;### (autoloads nil nil ("htmlize-pkg.el") (21458 47555 427868
-;;;;;;  959000))
+;;;### (autoloads nil nil ("htmlize-pkg.el") (21470 30542 29959 953000))
 
 ;;;***
 

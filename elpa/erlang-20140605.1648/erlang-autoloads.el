@@ -4,8 +4,8 @@
 
 
 ;;;### (autoloads (inferior-erlang erlang-compile erlang-shell erlang-find-tag-other-window
-;;;;;;  erlang-find-tag erlang-mode) "erlang" "erlang.el" (21458
-;;;;;;  47550 664657 376000))
+;;;;;;  erlang-find-tag erlang-mode) "erlang" "erlang.el" (21470
+;;;;;;  30534 849094 146000))
 ;;; Generated autoloads from erlang.el
 
 (autoload 'erlang-mode "erlang" "\
@@ -120,8 +120,8 @@ editing control characters:
 
 ;;;***
 
-;;;### (autoloads nil "erlang-start" "erlang-start.el" (21458 47550
-;;;;;;  528657 372000))
+;;;### (autoloads nil "erlang-start" "erlang-start.el" (21470 30534
+;;;;;;  839094 201000))
 ;;; Generated autoloads from erlang-start.el
 
 (let ((a '("\\.erl\\'" . erlang-mode)) (b '("\\.hrl\\'" . erlang-mode))) (or (assoc (car a) auto-mode-alist) (setq auto-mode-alist (cons a auto-mode-alist))) (or (assoc (car b) auto-mode-alist) (setq auto-mode-alist (cons b auto-mode-alist))))
@@ -134,7 +134,7 @@ editing control characters:
 
 ;;;### (autoloads nil nil ("erlang-eunit.el" "erlang-flymake.el"
 ;;;;;;  "erlang-pkg.el" "erlang-skels-old.el" "erlang-skels.el" "erlang_appwiz.el")
-;;;;;;  (21458 47550 777636 262000))
+;;;;;;  (21470 30534 858031 526000))
 
 ;;;***
 
