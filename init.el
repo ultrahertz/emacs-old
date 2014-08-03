@@ -138,11 +138,16 @@
 (setq org-log-done t
       org-todo-keywords
   '((sequence "TODO" "IN-PROGRESS" "WAITING" "DONE")))
+
+(setq org-agenda-custom-commands
+      '(("f" occur-tree "FIXME")))
+
 (setq org-agenda-show-log t
       org-agenda-todo-ignore-scheduled t
       org-agenda-todo-ignore-deadlines t
       org-hide-leading-stars t
       org-indent t)
+
 (setq org-agenda-files (list "~/org/todo.org"
                              "~/org/work.org"))
 
@@ -152,6 +157,7 @@
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
+(global-set-key (kbd "C-c i") 'org-index)
 
 ;;; Deft
 (setq deft-directory "~/org/deft")

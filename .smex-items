@@ -1,24 +1,24 @@
 
 ;; ----- smex-history -----
 (
- yank
- kill-region
+ package-menu-mark-upgrades
+ package-list-packages
+ package-refresh-contents
+ cider-jack-in
  eval-buffer
- package-install
- load-library
- elnode-server-list
  version
+ package-install
 )
 
 ;; ----- smex-data -----
 (
- (package-install . 6)
- (package-refresh-contents . 3)
+ (package-install . 8)
+ (package-refresh-contents . 5)
  (load-theme . 2)
  (multi-term . 3)
  (speedbar . 1)
- (package-list-packages . 2)
- (cider-jack-in . 1)
+ (package-list-packages . 3)
+ (cider-jack-in . 2)
  (slime . 1)
  (ielm . 1)
  (list-packages . 1)
@@ -31,15 +31,18 @@
  (clean-buffer-list . 1)
  (ido-mode . 4)
  (make-directory . 1)
- (eval-buffer . 31)
+ (eval-buffer . 33)
  (elnode-list-buffers . 2)
  (list-elnode-servers . 5)
  (indent-region . 3)
  (html-mode . 1)
  (web-mode . 1)
  (electric-indent-mode . 1)
- (load-library . 3)
- (version . 1)
+ (load-library . 6)
+ (version . 2)
  (kill-region . 1)
  (yank . 1)
+ (org-icalendar-export-to-ics . 2)
+ (org-cycle . 1)
+ (package-menu-mark-upgrades . 2)
 )

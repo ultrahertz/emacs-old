@@ -1,0 +1,8 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+X-WR-CALNAME:org-loaddefs
+PRODID:-//James Fletcher//Emacs with Org mode//EN
+X-WR-TIMEZONE:BST
+X-WR-CALDESC:org-loaddefs
+CALSCALE:GREGORIAN
+END:VCALENDAR
