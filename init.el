@@ -6,6 +6,7 @@
 
 ;;; Load path
 (add-to-list 'load-path "~/.emacs.d/elisp/")
+(add-to-list 'load-path "~/.emacs.d/elisp/emacs-web-server")
 (add-to-list 'load-path "~/.emacs.d/elisp/better-defaults/")
 (add-to-list 'load-path "~/.emacs.d/elisp/slime/")
 
@@ -165,3 +166,5 @@
 (setq deft-extension "org")
 (setq deft-text-mode 'org-mode)
 
+;;; Web-server
+(require 'web-server)

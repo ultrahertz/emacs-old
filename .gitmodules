@@ -4,3 +4,6 @@
 [submodule "elisp/better-defaults"]
 	path = elisp/better-defaults
 	url = git://github.com/ultrahertz/better-defaults
+[submodule "elisp/emacs-web-server"]
+	path = elisp/emacs-web-server
+	url = git@github.com:eschulte/emacs-web-server.git
