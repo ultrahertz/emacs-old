@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ;;; init.el --- -*- mode: emacs-lisp -*-
 ;; 
 ;; Filename: init.el
@@ -45,13 +44,10 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 
 ;;; Code:
-=======
-;; -*- mode: emacs-lisp coding: utf-8 -*-
-
->>>>>>> d29402d4b655756c29c5a4fedf85e3e3843e6886
 (setq user-full-name "James Fletcher")
 (setq user-mail-address "jamesfbsd@gmail.com")
 
+;;; Common-lisp
 (require 'cl)
 
 ;;; Load path
@@ -65,10 +61,14 @@
 (setq inferior-lisp-program "sbcl")
 (setq slime-contribs '(slime-fancy)) 
 
+;;; Better default settings
 (require 'better-defaults)
 
+;;; Nice theme
 (load-theme 'wombat t)
+(set-frame-font "Terminus-8")
 
+;;; No stupid messages
 (setq inhibit-slash-screen t
       initial-scratch-message nil
       inhibit-startup-message t)
@@ -76,12 +76,11 @@
 (setq package-enable-at-startup nil)
 
 (load "package")
+(package-initialize)
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.milkbox.net/packages/")
 			 ("org" . "http://orgmode.org/elpa/")))
-
-(package-initialize)
 
 (when (not package-archive-contents)
   (package-refresh-contents))
@@ -96,6 +95,8 @@
                           cmake-mode
                           conf-mode
                           deft
+                          elnode
+                          elpakit
                           erlang
                           go-mode
                           haskell-mode
@@ -104,11 +105,8 @@
                           lua-mode
                           magit
                           markdown-mode
-<<<<<<< HEAD
                           nginx-mode
-=======
                           multi-term
->>>>>>> d29402d4b655756c29c5a4fedf85e3e3843e6886
                           nodejs-repl
                           org
                           php-mode
