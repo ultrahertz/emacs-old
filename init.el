@@ -1,4 +1,49 @@
-
+;;; init.el --- -*- mode: emacs-lisp -*-
+;; 
+;; Filename: init.el
+;; Description: my emacs config
+;; Author: James Fletcher
+;; Maintainer: James Fletcher
+;; Created: Mon Aug  4 17:59:39 2014 (+0100)
+;; Version: 
+;; Package-Requires: ()
+;; Last-Updated: Mon Aug  4 18:02:30 2014 (+0100)
+;;           By: James Fletcher
+;;     Update #: 3
+;; URL: 
+;; Doc URL: 
+;; Keywords: 
+;; Compatibility: 
+;; 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 
+;;; Commentary: 
+;; 
+;; My ever improving emacs config. :)
+;; 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 
+;;; Change Log:
+;; 
+;; 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 
+;; This program is free software: you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or (at
+;; your option) any later version.
+;; 
+;; This program is distributed in the hope that it will be useful, but
+;; WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+;; General Public License for more details.
+;; 
+;; You should have received a copy of the GNU General Public License
+;; along with GNU Emacs.  If not, see <http://www.gnu.org/licenses/>.
+;; 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 
+;;; Code:
 (setq user-full-name "James Fletcher")
 (setq user-mail-address "jamesfbsd@gmail.com")
 
@@ -26,12 +71,12 @@
 (setq package-enable-at-startup nil)
 
 (load "package")
-(package-initialize)
-
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.milkbox.net/packages/")
 			 ("org" . "http://orgmode.org/elpa/")))
+
+(package-initialize)
 
 (when (not package-archive-contents)
   (package-refresh-contents))
@@ -39,15 +84,22 @@
 (defvar jamesf/packages '(ac-slime
                           auto-complete
                           autopair
+                          bat-mode
+                          csharp-mode
                           clojure-mode
                           cider
+                          cmake-mode
+                          conf-mode
                           deft
                           erlang
                           go-mode
                           haskell-mode
                           htmlize
+                          js3-mode
+                          lua-mode
                           magit
                           markdown-mode
+                          nginx-mode
                           nodejs-repl
                           org
                           php-mode
@@ -102,6 +154,10 @@
 
 (setq column-number-mode t)
 
+(defalias 'yes-or-no-p 'y-or-n-p) ; y or n is enough
+(defalias 'list-buffers 'ibuffer) ; always use ibuffer
+(defalias 'perl-mode 'cperl-mode) ; always use cperl-mode
+
 ;;; Backups
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
@@ -118,6 +174,19 @@
       erc-user-full-name user-full-name
       erc-email-userid "jamesf"
       erc-prompt-for-password t)
+
+;;; header2
+(require 'header2)
+(autoload 'auto-update-file-header "header2")
+(add-hook 'write-file-hooks 'auto-update-file-header)
+
+(add-hook 'emacs-lisp-mode-hook 'auto-make-header)
+(add-hook 'c-mode-common-hook 'auto-make-header)
+(add-hook 'php-mode-hook 'auto-make-header)
+(add-hook 'js3-mode-hook 'auto-make-header)
+(add-hook 'java-mode-hook 'auto-make-header)
+(add-hook 'web-mode-hook 'auto-make-header)
+(add-hook 'conf-mode-hook 'auto-make-header)
 
 ;;; Org-mode
 (require 'org)
@@ -168,3 +237,37 @@
 
 ;;; Web-server
 (require 'web-server)
+
+;;; auto-mode-alist
+(add-to-list 'auto-mode-alist '("/crontab.*$" . conf-mode))
+(add-to-list 'auto-mode-alist '("\\.cs$" . csharp-mode))
+(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+(add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
+
+(add-to-list 'auto-mode-alist '("\\.[bB][aA][tT]$" . bat-mode))
+
+;; Magically go into c++ mode (for windriver headers):
+(add-to-list 'magic-fallback-mode-alist '("^// " . c++-mode))
+
+(add-to-list 'auto-mode-alist '("\\.markdown" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.x$" . c++-mode))
+
+(add-to-list 'auto-mode-alist '("CMakeLists\\.txt$" . cmake-mode))
+(add-to-list 'auto-mode-alist '("\\.cmake$" . cmake-mode))
+
+(add-to-list 'auto-mode-alist '("/git-rebase-todo$" . conf-mode))
+
+(add-to-list 'auto-mode-alist '("_defconfig$" . conf-mode))
+(add-to-list 'auto-mode-alist '("/Kbuild$" . makefile-mode))
+
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.djhtml?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl" . web-mode))
+(add-to-list 'auto-mode-alist '("/.gitconfig". conf-mode))
+(add-to-list 'auto-mode-alist '("\.zsh" . sh-mode))
+(add-to-list 'auto-mode-alist '("\.install" . sh-mode))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; init.el ends here
