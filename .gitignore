@@ -1,6 +1,11 @@
 auto-save-list/*
+<<<<<<< HEAD
 backups/*
 elpa/*
 ac-comphist.dat
 .smex-items
 places
+=======
+elpa/*
+ac-comphist.dat
+>>>>>>> d29402d4b655756c29c5a4fedf85e3e3843e6886

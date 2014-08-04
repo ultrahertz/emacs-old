@@ -4,8 +4,8 @@
 
 
 ;;;### (autoloads (writegood-mode writegood-grade-level writegood-reading-ease)
-;;;;;;  "writegood-mode" "writegood-mode.el" (21458 47576 236658
-;;;;;;  184000))
+;;;;;;  "writegood-mode" "writegood-mode.el" (21470 30558 579107
+;;;;;;  579000))
 ;;; Generated autoloads from writegood-mode.el
 
 (autoload 'writegood-reading-ease "writegood-mode" "\
@@ -25,8 +25,8 @@ Colorize issues with the writing in the buffer.
 
 ;;;***
 
-;;;### (autoloads nil nil ("writegood-mode-pkg.el") (21458 47576
-;;;;;;  369754 894000))
+;;;### (autoloads nil nil ("writegood-mode-pkg.el") (21470 30558
+;;;;;;  582820 272000))
 
 ;;;***
 

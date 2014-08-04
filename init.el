@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ;;; init.el --- -*- mode: emacs-lisp -*-
 ;; 
 ;; Filename: init.el
@@ -44,6 +45,10 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 
 ;;; Code:
+=======
+;; -*- mode: emacs-lisp coding: utf-8 -*-
+
+>>>>>>> d29402d4b655756c29c5a4fedf85e3e3843e6886
 (setq user-full-name "James Fletcher")
 (setq user-mail-address "jamesfbsd@gmail.com")
 
@@ -99,7 +104,11 @@
                           lua-mode
                           magit
                           markdown-mode
+<<<<<<< HEAD
                           nginx-mode
+=======
+                          multi-term
+>>>>>>> d29402d4b655756c29c5a4fedf85e3e3843e6886
                           nodejs-repl
                           org
                           php-mode

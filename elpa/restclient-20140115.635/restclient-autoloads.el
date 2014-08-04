@@ -5,7 +5,7 @@
 
 ;;;### (autoloads (restclient-mode restclient-http-send-current-raw
 ;;;;;;  restclient-http-send-current) "restclient" "restclient.el"
-;;;;;;  (21458 47569 32657 957000))
+;;;;;;  (21470 30552 519104 418000))
 ;;; Generated autoloads from restclient.el
 
 (autoload 'restclient-http-send-current "restclient" "\
@@ -26,7 +26,7 @@
 ;;;***
 
 ;;;### (autoloads nil nil ("json-reformat.el" "restclient-pkg.el")
-;;;;;;  (21458 47569 79961 148000))
+;;;;;;  (21470 30552 526028 762000))
 
 ;;;***
 

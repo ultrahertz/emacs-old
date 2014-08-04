@@ -3,8 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads (nodejs-repl) "nodejs-repl" "nodejs-repl.el" (21458
-;;;;;;  47566 756657 885000))
+;;;### (autoloads (nodejs-repl) "nodejs-repl" "nodejs-repl.el" (21470
+;;;;;;  30550 169103 136000))
 ;;; Generated autoloads from nodejs-repl.el
 
 (autoload 'nodejs-repl "nodejs-repl" "\
@@ -14,8 +14,8 @@ Run Node.js REPL.
 
 ;;;***
 
-;;;### (autoloads nil nil ("nodejs-repl-pkg.el") (21458 47567 23454
-;;;;;;  263000))
+;;;### (autoloads nil nil ("nodejs-repl-pkg.el") (21470 30550 176928
+;;;;;;  992000))
 
 ;;;***
 
